@@ -59,6 +59,11 @@ It detects fake airdrop pressure, MCP tool-poisoning drift, repeated paid tool l
 
 Demo: https://safeintent-loopguard.pages.dev/
 
+## Published X Participation Post
+
+- Account: `@macy200201`
+- Post: `https://x.com/macy200201/status/2077289018283483331`
+
 ## Short X Post
 
 Built SafeIntent LoopGuard for #OKXAI:

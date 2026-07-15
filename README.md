@@ -8,6 +8,7 @@ It turns Web3 social context and a user's natural-language safety preferences in
 
 - Web app: https://safeintent-loopguard.pages.dev/
 - Narrated demo: [`outputs/demo-recording/safeintent-loopguard-demo-voiceover-subtitles.mp4`](outputs/demo-recording/safeintent-loopguard-demo-voiceover-subtitles.mp4)
+- X participation post: https://x.com/macy200201/status/2077289018283483331
 
 ![SafeIntent LoopGuard](outputs/submission-images/01-safeintent-home.png)
 

@@ -72,10 +72,14 @@ https://github.com/Chengyuann/safeintent-loopguard
 ### X / Twitter Link
 
 ```text
-https://x.com/[YOUR_REAL_X_HANDLE]
+https://x.com/macy200201
 ```
 
-Do not submit the placeholder `x.com/username`.
+### X Participation Post
+
+```text
+https://x.com/macy200201/status/2077289018283483331
+```
 
 ### Wallet
 
