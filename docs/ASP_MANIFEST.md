@@ -26,7 +26,7 @@ The service returns an execution decision (`ALLOW`, `WARN`, `ASK_MORE`, or `BLOC
 ## Endpoint Shape
 
 ```http
-POST /api/guard/check
+POST https://safeintent-loopguard.pages.dev/api/guard/check
 Content-Type: application/json
 ```
 

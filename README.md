@@ -46,6 +46,7 @@ Clicking a module opens a focused detail overlay. The homepage itself has no bel
 app/                 React + Vite demo
 app/public/media/    Web-safe generated hero video and poster
 server/              Local ASP-shaped JSON API
+functions/api/       Public Cloudflare Pages API routes
 shared/              Deterministic policy engine, demo scenarios, ASP manifest
 docs/                API, ASP listing, demo, submission, and implementation docs
 scripts/             Local verification script
@@ -56,6 +57,7 @@ outputs/checks/      Browser QA screenshots and safe previews
 
 - React, TypeScript, and Vite
 - Node.js JSON API
+- Cloudflare Pages Functions API
 - Shared deterministic policy engine
 - MCP/A2MCP-shaped tool contract
 - x402-ready pricing metadata
@@ -74,6 +76,13 @@ Optional API server:
 npm run dev:server
 ```
 
+Run the production-shaped Pages app and API locally:
+
+```bash
+npm run build
+npm run dev:pages
+```
+
 Verify the rule engine and production build:
 
 ```bash
@@ -89,6 +98,12 @@ npm run verify
 - `POST /api/mandate/compile`
 - `POST /api/guard/check`
 - `POST /api/receipt/generate`
+
+Production guard endpoint:
+
+```text
+https://safeintent-loopguard.pages.dev/api/guard/check
+```
 
 ## Safety Boundary
 

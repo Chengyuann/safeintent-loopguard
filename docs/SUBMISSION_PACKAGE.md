@@ -10,7 +10,7 @@ SafeIntent LoopGuard is ready as a local hackathon MVP package:
 - Four clickable modules: Social Context, Mandate Compiler, Loop Guard, Intent Receipt.
 - Details appear only after a module is clicked.
 - Deterministic shared policy engine.
-- Local ASP-shaped API server.
+- Public ASP-shaped API deployed on Cloudflare Pages Functions.
 - ASP listing copy, API docs, submission answers, and 90-second demo script.
 - A fully re-recorded 59-second demo has been generated from the current production build.
 
@@ -32,6 +32,13 @@ Run API server:
 
 ```bash
 npm run dev:server
+```
+
+Run the production-shaped Pages frontend and API locally:
+
+```bash
+npm run build
+npm run dev:pages
 ```
 
 Run verification:
@@ -57,7 +64,7 @@ https://safeintent-loopguard.pages.dev/
 Deployment preview URL:
 
 ```text
-https://6729f2ac.safeintent-loopguard.pages.dev/
+https://57aa0f87.safeintent-loopguard.pages.dev/
 ```
 
 Cloudflare project:
@@ -77,6 +84,7 @@ safeintent-loopguard
 - `shared/src/aspManifest.ts` - manifest object served by the API.
 - `shared/src/data/scenarios.ts` - bundled demo scenarios.
 - `server/src/index.ts` - local JSON API server.
+- `functions/api/[[path]].ts` - production Cloudflare Pages API router.
 - `app/public/media/safeintent-hero-loop.mp4` - web-safe generated hero video.
 - `app/public/media/safeintent-hero-poster.jpg` - poster image.
 
@@ -136,7 +144,9 @@ Verified on production preview:
 Verified on Cloudflare production:
 
 - Production URL loaded at `https://safeintent-loopguard.pages.dev/`.
-- Latest deployment preview URL loaded at `https://6729f2ac.safeintent-loopguard.pages.dev/`.
+- Latest deployment preview URL loaded at `https://57aa0f87.safeintent-loopguard.pages.dev/`.
+- Production API loaded at `https://safeintent-loopguard.pages.dev/api/guard/check`.
+- Production fake-airdrop guard check returned `BLOCK`, risk score `100`, and `8` conflicts.
 - Production served `index-DDEHhOaL.js` and `index-C9pvfr32.css`.
 - Guard-action typewriter text rendered and advanced without changing the reserved layout width.
 - Normal viewports show the full prefix; short viewports use the compact `guard:` label.

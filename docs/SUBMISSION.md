@@ -35,7 +35,7 @@ SafeIntent LoopGuard accepts social context, a user mandate, and an agent plan. 
 ## Why It Fits OKX.AI ASP
 
 - It is a callable pre-execution service for other agents.
-- It has a clear tool endpoint: `POST /api/guard/check`.
+- It has a deployed tool endpoint: `POST https://safeintent-loopguard.pages.dev/api/guard/check`.
 - It supports a free preview / paid receipt pricing model.
 - It is x402-ready in shape: full receipts and diagnostics can be paid outputs.
 - It improves safety for finance, agentic wallet, MCP, and paid-tool workflows.
@@ -43,7 +43,8 @@ SafeIntent LoopGuard accepts social context, a user mandate, and an agent plan. 
 ## Demo Links / Artifacts
 
 - Live web demo: `https://safeintent-loopguard.pages.dev/`
-- Latest Cloudflare deployment preview: `https://6729f2ac.safeintent-loopguard.pages.dev/`
+- Latest Cloudflare deployment preview: `https://57aa0f87.safeintent-loopguard.pages.dev/`
+- Production guard API: `https://safeintent-loopguard.pages.dev/api/guard/check`
 - Local web demo: `npm run dev`
 - Local API server: `npm run dev:server`
 - ASP manifest docs: `docs/ASP_MANIFEST.md`
@@ -86,7 +87,7 @@ SafeIntent treats voice and social context as part of the execution-risk model. 
 
 ### Technical Description
 
-The project is a TypeScript React/Vite demo plus a local ASP-shaped JSON API. Shared policy logic detects social risk signals, compiles user mandates, checks wallet actions, detects repeated paid tool loops, flags tool-output instruction injection, scores risk, and emits an Intent-to-Action Receipt. The server exposes health, scenarios, ASP manifest, social-risk intake, mandate compile, guard check, and receipt endpoints.
+The project is a TypeScript React/Vite demo plus a deployed ASP-shaped JSON API on Cloudflare Pages Functions. Shared policy logic detects social risk signals, compiles user mandates, checks wallet actions, detects repeated paid tool loops, flags tool-output instruction injection, scores risk, and emits an Intent-to-Action Receipt. The service exposes health, scenarios, ASP manifest, social-risk intake, mandate compile, guard check, and receipt endpoints.
 
 ### Revenue Model
 

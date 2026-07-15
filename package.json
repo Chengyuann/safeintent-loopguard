@@ -6,7 +6,10 @@
   "description": "Voice-aware mandate and loop-risk guardrail ASP for OKX.AI agents.",
   "scripts": {
     "dev": "vite --host 127.0.0.1",
+    "dev:api": "wrangler dev --config wrangler.api.jsonc --port 8790",
+    "dev:pages": "wrangler pages dev dist --port 8791",
     "dev:server": "tsx watch server/src/index.ts",
+    "deploy:api": "wrangler deploy --config wrangler.api.jsonc",
     "build": "tsc --noEmit && vite build",
     "preview": "vite preview --host 127.0.0.1",
     "test:engine": "tsx scripts/test-engine.ts",
@@ -22,8 +25,10 @@
     "vite": "^5.4.11"
   },
   "devDependencies": {
+    "@cloudflare/workers-types": "^5.20260715.1",
     "@types/node": "^22.10.2",
     "@types/react": "^18.3.12",
-    "@types/react-dom": "^18.3.1"
+    "@types/react-dom": "^18.3.1",
+    "wrangler": "^4.110.0"
   }
 }

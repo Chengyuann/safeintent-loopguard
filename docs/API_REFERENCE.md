@@ -1,5 +1,11 @@
 # API Reference
 
+Production base URL:
+
+```text
+https://safeintent-loopguard.pages.dev
+```
+
 ## `GET /api/health`
 
 Returns server status.

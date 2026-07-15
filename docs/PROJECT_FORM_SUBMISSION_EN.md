@@ -81,6 +81,12 @@ https://x.com/macy200201
 https://x.com/macy200201/status/2077289018283483331
 ```
 
+### Telegram Handle
+
+```text
+@macy200201
+```
+
 ### Wallet
 
 Connect a wallet that you control and that meets the hackathon network requirements. Never provide a private key, seed phrase, or recovery phrase.
@@ -222,10 +228,13 @@ Production frontend:
 https://safeintent-loopguard.pages.dev/
 
 Latest Cloudflare deployment:
-https://6729f2ac.safeintent-loopguard.pages.dev/
+https://57aa0f87.safeintent-loopguard.pages.dev/
 
 Cloudflare Pages project:
 safeintent-loopguard
+
+Production guard endpoint:
+https://safeintent-loopguard.pages.dev/api/guard/check
 ```
 
 ### Hackathon-Compliant Ecosystem Deployment
@@ -238,7 +247,7 @@ Recommended answer:
 Ecosystem deployed: No on-chain deployment
 
 Details:
-The current hackathon MVP is deployed as a production web application on Cloudflare Pages. It includes an ASP-shaped local API and mock-compatible x402/A2MCP metadata, but it does not deploy or execute a smart contract and does not submit wallet transactions.
+The current hackathon MVP is deployed as a production web application with a public ASP-shaped API on Cloudflare Pages Functions. It includes mock-compatible x402/A2MCP metadata, but it does not deploy or execute a smart contract and does not submit wallet transactions.
 
 Deployment:
 https://safeintent-loopguard.pages.dev/

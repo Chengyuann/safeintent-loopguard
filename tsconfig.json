@@ -21,5 +21,6 @@
     "noEmit": true,
     "jsx": "react-jsx"
   },
-  "include": ["app/src", "server/src", "shared/src", "scripts", "vite.config.ts"]
+  "include": ["app/src", "server/src", "shared/src", "worker/src", "scripts", "vite.config.ts"],
+  "exclude": ["functions"]
 }

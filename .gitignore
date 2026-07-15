@@ -5,7 +5,9 @@ dist/
 .env.*
 .agent/
 .playwright-cli/
+.wrangler/
 work/
+worker-configuration.d.ts
 02178386579690300000000000000000000ffffac140365c3caa5.mp4
 outputs/screenshots/*.png
 outputs/screenshots/*.webm
