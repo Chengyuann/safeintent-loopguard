@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" role="img" aria-labelledby="title desc">
+  <title id="title">SafeIntent LoopGuard transparent mark</title>
+  <desc id="desc">A segmented cyan shield with a coral execution guard line and agent-loop orbits.</desc>
+  <defs>
+    <radialGradient id="core" cx="48%" cy="28%" r="74%">
+      <stop offset="0" stop-color="#183a50"/>
+      <stop offset="0.48" stop-color="#0a1727"/>
+      <stop offset="1" stop-color="#050914"/>
+    </radialGradient>
+    <linearGradient id="shieldStroke" x1="280" y1="216" x2="752" y2="818" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#b9fbff"/>
+      <stop offset="0.36" stop-color="#63e7ee"/>
+      <stop offset="1" stop-color="#2fb9c7"/>
+    </linearGradient>
+    <linearGradient id="guardStroke" x1="326" y1="512" x2="700" y2="512" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#ff9aa9"/>
+      <stop offset="0.48" stop-color="#e8546b"/>
+      <stop offset="1" stop-color="#ffb07c"/>
+    </linearGradient>
+    <filter id="cyanGlow" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="14" result="blur"/>
+      <feFlood flood-color="#63e7ee" flood-opacity="0.72"/>
+      <feComposite in2="blur" operator="in"/>
+      <feMerge>
+        <feMergeNode/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="coralGlow" x="-80%" y="-80%" width="260%" height="260%">
+      <feGaussianBlur stdDeviation="13" result="blur"/>
+      <feFlood flood-color="#e8546b" flood-opacity="0.82"/>
+      <feComposite in2="blur" operator="in"/>
+      <feMerge>
+        <feMergeNode/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <clipPath id="shieldClip">
+      <path d="M512 238 734 328v174c0 154-88 257-222 318-134-61-222-164-222-318V328l222-90Z"/>
+    </clipPath>
+  </defs>
+
+  <g fill="none" stroke-linecap="round">
+    <ellipse cx="512" cy="512" rx="356" ry="142" transform="rotate(-19 512 512)" stroke="#63e7ee" stroke-opacity="0.62" stroke-width="8"/>
+    <ellipse cx="512" cy="512" rx="322" ry="122" transform="rotate(58 512 512)" stroke="#8c7af4" stroke-opacity="0.5" stroke-width="7"/>
+    <ellipse cx="512" cy="512" rx="382" ry="156" transform="rotate(122 512 512)" stroke="#e7aa64" stroke-opacity="0.46" stroke-width="6" stroke-dasharray="15 28"/>
+  </g>
+  <g filter="url(#cyanGlow)">
+    <circle cx="191" cy="626" r="13" fill="#63e7ee"/>
+    <circle cx="673" cy="190" r="11" fill="#8c7af4"/>
+    <circle cx="816" cy="648" r="12" fill="#e7aa64"/>
+  </g>
+
+  <path d="M512 238 734 328v174c0 154-88 257-222 318-134-61-222-164-222-318V328l222-90Z"
+        fill="url(#core)" stroke="url(#shieldStroke)" stroke-width="28" stroke-linejoin="round" filter="url(#cyanGlow)"/>
+  <g clip-path="url(#shieldClip)" opacity="0.38">
+    <path d="M256 392h512M256 456h512M256 520h512M256 584h512M256 648h512" stroke="#63e7ee" stroke-width="2"/>
+    <path d="M352 208v624M416 208v624M480 208v624M544 208v624M608 208v624M672 208v624" stroke="#63e7ee" stroke-width="2"/>
+    <circle cx="512" cy="506" r="176" fill="none" stroke="#63e7ee" stroke-width="4" stroke-dasharray="13 18"/>
+  </g>
+  <path d="M363 514h116l36-64 54 128 39-64h64"
+        fill="none" stroke="url(#guardStroke)" stroke-width="32" stroke-linecap="round" stroke-linejoin="round" filter="url(#coralGlow)"/>
+  <path d="m454 676 58 34 58-34" fill="none" stroke="#63e7ee" stroke-width="24" stroke-linecap="round" stroke-linejoin="round"/>
+  <g fill="#f4fbff">
+    <circle cx="363" cy="514" r="9"/>
+    <circle cx="672" cy="514" r="9"/>
+  </g>
+</svg>

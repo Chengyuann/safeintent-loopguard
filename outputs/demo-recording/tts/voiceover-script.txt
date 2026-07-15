@@ -1,0 +1,7 @@
+SafeIntent LoopGuard is a pre-execution firewall for OKX AI agents.
+It starts before the wallet popup, when social pressure becomes an agent task.
+The first module reads Web3 voice or community context, like an urgent airdrop claim from a Discord AMA.
+The second module compiles the user's safety mandate into policy: main wallet read-only, no unknown approvals, no unlimited approvals, and paid tools under budget.
+The loop guard checks the actual agent plan before MCP calls, x402-style payments, signatures, approvals, or repeated paid retries.
+Finally, the receipt explains the decision. Here the agent tried to turn a read-only airdrop check into an unlimited approval, so SafeIntent blocks it and suggests a safer rewrite.
+Other OKX AI agents can call this ASP before they spend, sign, approve, or loop.

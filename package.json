@@ -1,0 +1,29 @@
+{
+  "name": "safeintent-loopguard",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Voice-aware mandate and loop-risk guardrail ASP for OKX.AI agents.",
+  "scripts": {
+    "dev": "vite --host 127.0.0.1",
+    "dev:server": "tsx watch server/src/index.ts",
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview --host 127.0.0.1",
+    "test:engine": "tsx scripts/test-engine.ts",
+    "verify": "npm run test:engine && npm run build"
+  },
+  "dependencies": {
+    "@vitejs/plugin-react": "^4.6.0",
+    "lucide-react": "^0.468.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "tsx": "^4.20.3",
+    "typescript": "^5.7.3",
+    "vite": "^5.4.11"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.2",
+    "@types/react": "^18.3.12",
+    "@types/react-dom": "^18.3.1"
+  }
+}
