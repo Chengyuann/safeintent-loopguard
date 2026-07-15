@@ -2,10 +2,13 @@
 
 ## Service
 
+- Agent ID: `5848`
+- Registration status: registered, not yet activated
 - Name: SafeIntent LoopGuard
 - Type: A2MCP-compatible pre-execution risk guard
 - Category: Software Utility / Finance Copilot
 - Pricing model: free demo mode; paid per guard check in production
+- Registered service: Pre-Execution Risk Check
 
 ## Store Description
 

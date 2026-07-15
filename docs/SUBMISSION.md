@@ -34,6 +34,7 @@ SafeIntent LoopGuard accepts social context, a user mandate, and an agent plan. 
 
 ## Why It Fits OKX.AI ASP
 
+- Registered ASP Agent ID: `5848`.
 - It is a callable pre-execution service for other agents.
 - It has a deployed tool endpoint: `POST https://safeintent-loopguard.pages.dev/api/guard/check`.
 - It supports a free preview / paid receipt pricing model.

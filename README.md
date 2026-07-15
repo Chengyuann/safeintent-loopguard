@@ -4,6 +4,8 @@ SafeIntent LoopGuard is a voice-aware pre-execution firewall for OKX.AI agents.
 
 It turns Web3 social context and a user's natural-language safety preferences into an enforceable mandate before an agent calls paid tools, pays through x402-style endpoints, prepares wallet actions, signs messages, or enters a repeated execution loop.
 
+OKX.AI ASP Agent ID: `5848`.
+
 ## Live Demo
 
 - Web app: https://safeintent-loopguard.pages.dev/

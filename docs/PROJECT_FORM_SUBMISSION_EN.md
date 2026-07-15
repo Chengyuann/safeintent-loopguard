@@ -1,5 +1,60 @@
 # SafeIntent LoopGuard - Project Form Submission
 
+## OKX.AI Genesis Hackathon Submission Fields
+
+### Project
+
+```text
+SafeIntent LoopGuard
+```
+
+### Prize Tracks
+
+Select:
+
+```text
+Best Product
+Creative Genius
+Finance Copilot
+Software Utility
+```
+
+### ASP Name
+
+```text
+SafeIntent LoopGuard
+```
+
+### Agent ID
+
+```text
+5848
+```
+
+### ASP Description
+
+```text
+SafeIntent LoopGuard is a pre-execution risk firewall that turns Web3 social context and user mandates into policy before AI agents spend, sign, approve, call paid tools, or loop. It returns explainable decisions, conflict evidence, and safer rewrites.
+```
+
+### X Account Handle
+
+```text
+@macy200201
+```
+
+### X Participation Post
+
+```text
+https://x.com/macy200201/status/2077289018283483331
+```
+
+### Telegram Handle
+
+```text
+@macy200201
+```
+
 ## Basic Information
 
 ### Name
@@ -85,6 +140,19 @@ https://x.com/macy200201/status/2077289018283483331
 
 ```text
 @macy200201
+```
+
+## OKX.AI ASP Registration
+
+```text
+Agent ID: 5848
+Role: ASP
+Registration status: Registered, not yet activated
+Service: Pre-Execution Risk Check
+Service type: API service
+Fee: 0 USDT
+Endpoint: https://safeintent-loopguard.pages.dev/api/guard/check
+Transaction: 0xe23bad388c90f9d70bc7c160b272364c05f13e23f42675bb9b311f19b3211e81
 ```
 
 ### Wallet
