@@ -13,7 +13,8 @@
     "build": "tsc --noEmit && vite build",
     "preview": "vite preview --host 127.0.0.1",
     "test:engine": "tsx scripts/test-engine.ts",
-    "verify": "npm run test:engine && npm run build"
+    "test:http": "tsx scripts/test-http.ts",
+    "verify": "npm run test:engine && npm run test:http && npm run build"
   },
   "dependencies": {
     "@vitejs/plugin-react": "^4.6.0",

@@ -26,9 +26,24 @@ Runs only the social-context risk detector.
 
 Compiles a natural-language mandate into deterministic policy.
 
-## `POST /api/guard/check`
+## `/api/guard/check`
 
-Runs the full SafeIntent guard.
+- `GET` / `HEAD`: returns an endpoint-readiness response for service discovery and marketplace review.
+- `OPTIONS`: returns CORS capabilities.
+- Empty `POST` or `POST {}`: returns the readiness response and required input schema.
+- Valid JSON `POST`: runs the full SafeIntent guard.
+- Partially populated or invalid JSON `POST`: returns a structured `400` response.
+
+Required JSON fields:
+
+```text
+session_id
+user_goal
+social_context.source
+social_context.text
+user_mandate_text
+agent_plan
+```
 
 ## `POST /api/receipt/generate`
 
