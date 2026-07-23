@@ -136,11 +136,6 @@ async function readGuardJson(request: Request): Promise<unknown | null> {
     return null;
   }
 
-  const contentType = request.headers.get("content-type") ?? "";
-  if (!contentType.toLowerCase().includes("application/json")) {
-    throw new RequestError(415, "Content-Type must be application/json.");
-  }
-
   const contentLength = Number(request.headers.get("content-length") ?? "0");
   if (Number.isFinite(contentLength) && contentLength > 256_000) {
     throw new RequestError(413, "Request body is too large.");
@@ -149,6 +144,11 @@ async function readGuardJson(request: Request): Promise<unknown | null> {
   const text = await request.text();
   if (text.trim().length === 0) {
     return null;
+  }
+
+  const contentType = request.headers.get("content-type") ?? "";
+  if (!contentType.toLowerCase().includes("application/json")) {
+    throw new RequestError(415, "Content-Type must be application/json.");
   }
 
   try {

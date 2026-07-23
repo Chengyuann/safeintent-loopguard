@@ -36,6 +36,16 @@ await check(
 );
 
 await check(
+  "POST empty text body without content type",
+  new Request(endpoint, { method: "POST", body: "" }),
+  200,
+  async (response) => {
+    const body = await response.json() as { ok?: boolean; input_required?: boolean };
+    return body.ok === true && body.input_required === true;
+  }
+);
+
+await check(
   "POST empty object",
   jsonRequest(endpoint, {}),
   200,
