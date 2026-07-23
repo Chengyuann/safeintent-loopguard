@@ -12,7 +12,7 @@ SafeIntent LoopGuard is ready as a local hackathon MVP package:
 - Deterministic shared policy engine.
 - Public ASP-shaped API deployed on Cloudflare Pages Functions.
 - ASP listing copy, API docs, submission answers, and 90-second demo script.
-- A fully re-recorded 59-second demo has been generated from the current production build.
+- A fully re-recorded 72-second demo has been generated from the current production build.
 
 ## Local Demo Commands
 
@@ -163,6 +163,10 @@ Verified on Cloudflare production:
 
 Generated files:
 
+- `outputs/demo-v2/final/safeintent-loopguard-demo-v2.mp4`
+- `outputs/demo-v2/final/safeintent-loopguard-demo-v2-cover.jpg`
+- `outputs/demo-v2/assets/safeintent-music-v2.wav`
+- `outputs/demo-v2/tts/safeintent-loopguard-demo-v2.srt`
 - `outputs/demo-recording/safeintent-loopguard-demo-voiceover-subtitles.mp4`
 - `outputs/demo-recording/safeintent-loopguard-demo-voiceover.mp4`
 - `outputs/demo-recording/tts/safeintent-voiceover.mp3`
@@ -177,17 +181,17 @@ Recommended submitted video:
 
 Voiceover/subtitle video properties:
 
-- Duration: 59.08 seconds.
+- Duration: 72.00 seconds.
 - Resolution: 1440x900.
 - Video codec: H.264.
 - Audio codec: AAC.
-- Includes English TTS narration.
-- Includes burned-in English subtitles.
-- Size: about 8.0 MiB.
+- Includes English TTS narration and beat-matched music.
+- Includes burned-in English subtitles and an ASP Agent 5848 proof card.
+- Size: about 12 MiB.
 - Under the 90-second demo limit.
-- Re-recorded after the guard-action typewriter update; it does not loop the older 34.84-second screen capture.
-- The timeline now matches the narration: current homepage/typewriter, Social Context, Mandate Compiler, Loop Guard, Intent Receipt with conflict/rewrite scrolling, then the current homepage closing shot.
-- Uses a subtle cyan pointer ring in the recording to make module navigation clear to judges.
+- Rebuilt as the coordinated v2 demo after ASP registration and activation submission; it does not loop the older 34.84-second screen capture.
+- The timeline now uses a coordinated v2 structure: branded intro, current homepage, Social Context, Mandate Compiler, Loop Guard, Intent Receipt with conflict/rewrite scrolling, ASP Agent 5848 proof card, and closing shot.
+- Uses real product interaction, a branded intro, ASP proof overlay, and timed music cues to make the demo easier for judges to follow.
 
 Current silent recording properties:
 
@@ -202,13 +206,13 @@ The recording flow shows the current homepage and typewriter effect, then opens 
 
 Recording QA:
 
-- Video stream starts at `0.000` and lasts `59.080` seconds.
-- Audio stream starts at `0.000` and lasts `59.064` seconds.
+- Video stream starts at `0.000` and lasts `72.000` seconds.
+- Audio stream starts at `0.000` and the final mix lasts `72.000` seconds.
 - Full decode passed with no errors.
 - No black frames or unexpected long silence were detected.
-- Integrated loudness is approximately `-17.5 LUFS`.
+- Integrated loudness is approximately `-16.1 LUFS`.
 - MP4 `moov` atom precedes `mdat` (`faststart` enabled).
-- Final SHA-256: `506b0e6dc164afd68f2146981e653e6a0d07d9cc6a80fc02574dbc05352a8a4d`.
+- Final SHA-256: `90844dfd616e1faf21b11bbb138728872a52753b90c2d16d4cc1e3dc03fe0788`.
 
 ## API Smoke Test
 

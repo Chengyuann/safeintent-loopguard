@@ -22,6 +22,8 @@ outputs/demo-recording/raw/
 outputs/demo-recording/qa-current/
 outputs/demo-recording/tts/tts-response*
 outputs/demo-recording/tts/subtitle_pngs/
+outputs/demo-recording/tts/*.wav
+outputs/demo-v2/
 outputs/demo-recording/safeintent-loopguard-demo.mp4
 outputs/demo-recording/safeintent-loopguard-demo-voiceover.mp4
 outputs/submission-images/submission-images-contact-sheet.jpg

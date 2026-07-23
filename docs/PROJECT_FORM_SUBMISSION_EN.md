@@ -196,7 +196,7 @@ outputs/submission-images/submission-images-contact-sheet.codex-preview.jpg
 outputs/demo-recording/safeintent-loopguard-demo-voiceover-subtitles.mp4
 ```
 
-Properties: 59.08 seconds, 1440x900, H.264 + AAC, English narration, and burned-in English subtitles.
+Properties: 72.00 seconds, 1440x900, H.264 + AAC, English narration, beat-matched music, ASP proof card, and burned-in English subtitles.
 
 ### Project Pitch
 
@@ -234,7 +234,7 @@ Completed work:
 - Built and refined a responsive React/Vite frontend with four interactive modules, generated hero media, a guard-action typewriter effect, modal detail views, and mobile and short-screen support.
 - Deployed the current build to Cloudflare Pages.
 - Completed desktop and mobile production QA, API smoke tests, sensitive-information scans, and deterministic engine tests.
-- Re-recorded a 59-second demo from the current build with English narration, burned-in subtitles, and all four modules.
+- Re-recorded a 72-second demo from the current build with English narration, burned-in subtitles, and all four modules.
 
 Current MVP:
 https://safeintent-loopguard.pages.dev/
